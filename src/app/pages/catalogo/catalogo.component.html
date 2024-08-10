@@ -1,0 +1,93 @@
+<header>
+  <h1>Catálogo de Canetas</h1>
+     <!-- Área para exibir o número total de itens no carrinho -->
+     
+      <p>Itens no carrinho: <span id="cartCount"></span>{{countCarrinho}}</p>
+  
+  
+  <a class="btn" routerLink="/login">Login</a>
+
+</header>
+<main>
+  <section class="catalog">
+    <article class="pen">
+      <div class="sketchfab-embed-wrapper">
+        <iframe
+          title="Bic Cristal (CAD model)"
+          frameborder="0"
+          allowfullscreen
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+          allow="autoplay; fullscreen; xr-spatial-tracking"
+          xr-spatial-tracking
+          execution-while-out-of-viewport
+          execution-while-not-rendered
+          web-share
+          src="https://sketchfab.com/models/9ee4e1f1436b470680151ce3bdfd3462/embed"
+        >
+        </iframe>
+      </div>
+
+      <h2>Caneta Azul</h2>
+      <p>
+        Uma caneta azul de tinta gel, ideal para escrever com suavidade e
+        precisão.
+      </p>
+      <button id="addToCartBtn" (click)="addItemCarrinho()">Adicionar ao Carrinho</button>
+    </article>
+    <article class="pen">
+      <div class="sketchfab-embed-wrapper">
+        <iframe
+          title="Red Metall Pen"
+          frameborder="0"
+          allowfullscreen
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+          allow="autoplay; fullscreen; xr-spatial-tracking"
+          xr-spatial-tracking
+          execution-while-out-of-viewport
+          execution-while-not-rendered
+          web-share
+          src="https://sketchfab.com/models/b056e38e70894ebf9ec5c1e380f67f4d/embed"
+        >
+        </iframe>
+      </div>
+      <h2>Caneta Vermelha</h2>
+      <p>
+        Caneta vermelha com tinta de secagem rápida, excelente para anotações e
+        correções.
+      </p>
+      <button id="addToCartBtn" (click)="addItemCarrinho()">Adicionar ao Carrinho</button>
+    </article>
+    <article class="pen">
+      <div class="sketchfab-embed-wrapper">
+        <iframe
+          title="Pen"
+          frameborder="0"
+          allowfullscreen
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+          allow="autoplay; fullscreen; xr-spatial-tracking"
+          xr-spatial-tracking
+          execution-while-out-of-viewport
+          execution-while-not-rendered
+          web-share
+          src="https://sketchfab.com/models/bfcfda8c03fe429aaf66d135ee9b7165/embed"
+        >
+        </iframe>
+      
+      </div>
+      <h2>Caneta Preta</h2>
+      <p>
+        Caneta preta com tinta permanente, perfeita para documentos importantes
+        e assinatura.
+      </p>
+      <button id="addToCartBtn" (click)="addItemCarrinho()">Adicionar ao Carrinho</button>
+    </article>
+    
+
+  </section>
+</main>
+<footer>
+  <p>&copy; 2024 Catálogo de Canetas. Todos os direitos reservados.</p>
+</footer>

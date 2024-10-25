@@ -1,0 +1,67 @@
+<app-menu></app-menu>
+<div class="container">
+    <h1>Movimentação de Produtos</h1>
+<form class="product-form">
+    <label for="nome">Id:</label>
+    <input formControlName="nome" type="text" id="nome" name="nome" required>
+
+    <label for="preco">Data de Movimentação:</label>
+    <input formControlName="datademovimentacao" type="number" id="preco" name="preco" step="0.01" required>
+
+    <label for="garantia">Produto:</label>
+    <input formControlName="produto" type="text" id="garantia" name="garantia" required>
+
+    <label for="descricao">Quantidade:</label>
+    <input formControlName="quantidade" type="text" id="descricao" name="descricao" required>
+
+    <label for="tipo">Tipo:</label>
+    <input formControlName="tipo" type="text" id="tipo" name="tipo" required>
+
+    <button type="submit">Enviar</button>
+</form>
+
+<div class="report">
+    <h2>Relatório</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Ação</th> 
+                <th>ID</th>
+                <th>Data</th>
+                <th>Produto</th> 
+                <th>Quantidade</th> 
+                <th>Tipo</th> 
+                <th>Usuário</th>
+                 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><button>Excluir</button></td>
+                <td>001</td>
+                <td>27/03/2024</td>
+                <td>Caneta Preta</td> 
+                <td>39</td> 
+                <td>Preta</td> 
+                <td>Cliente</td> 
+            </tr>
+            <tr>
+                <td><button>Excluir</button></td>
+                <td>002</td>
+                <td>20/01/2024</td>
+                <td>Caneta Azul</td>
+                <td>24</td> 
+                <td>Azul</td>
+                <td>Cliente</td> 
+            </tr>
+            <tr>
+                <td><button>Excluir</button></td>
+                <td>003</td>
+                <td>24/02/2024</td>
+                <td>Caneta Vermelha</td> 
+                <td>18</td> 
+                <td>Vermelha</td> 
+                <td>Cliente</td>
+            </tr>
+        </tbody>
+    </table>

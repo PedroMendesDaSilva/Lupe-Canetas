@@ -1,0 +1,81 @@
+<app-menu></app-menu>
+<div class="container">
+    <h1>Cadastro de Produtos</h1>
+<form class="product-form" [formGroup]="formulario">
+    <label for="nome">Nome:</label>
+    <input formControlName="Nome" id="nome" name="nome" required>
+
+    <label for="preco">Preço:</label>
+    <input formControlName="Preço" type="number" id="preco" name="preco" step="0.01" required>
+
+    <label for="garantia">Garantia:</label>
+    <input formControlName="Garantia" type="text" id="garantia" name="garantia" required>
+
+    <label for="descricao">Descrição:</label>
+    <input formControlName="Descrição" type="text" id="descricao" name="descricao" required>
+
+    <label for="id">ID:</label>
+    <input formControlName="ID" type="text" id="id" name="id" required>
+
+    <label for="cor">Cor:</label>
+    <input formControlName="Cor" type="text" id="cor" name="cor" required>
+
+    <label for="fabricante">Fabricante:</label>
+    <input formControlName="Fabricante" type="text" id="fabricante" name="fabricante" required>
+
+    <label for="tipo">Tipo:</label>
+    <input formControlName="Tipo" type="text" id="tipo" name="tipo" required>
+
+    <button type="submit"(click)="onSave()">Enviar</button>
+    <button type="submit"(click)="onCancelar()">Cancelar</button>
+</form>
+
+<div class="report">
+    <h2>Relatório</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Ação</th> 
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Preço</th> 
+                <th>Garantia</th> 
+                <th>Cor</th> 
+                <th>Fabricante</th>
+                <th>Tipo</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><button>Excluir</button></td>
+                <td>001</td>
+                <td>Caneta Preta</td>
+                <td>R$ 3,50</td> 
+                <td>3 meses</td> 
+                <td>Preta</td> 
+                <td>FaberCastel</td>
+                <td>Objeto</td> 
+            </tr>
+            <tr>
+                <td><button>Excluir</button></td>
+                <td>002</td>
+                <td>Caneta Azul</td>
+                <td>R$ 3,50</td> 
+                <td>3 meses</td> 
+                <td>Azul</td> 
+                <td>FaberCastel</td>
+                <td>Objeto</td> 
+            </tr>
+            <tr>
+                <td><button>Excluir</button></td>
+                <td>003</td>
+                <td>Caneta Vermelha</td>
+                <td>R$ 3,50</td> 
+                <td>3 meses</td> 
+                <td>Vermelha</td> 
+                <td>FaberCastel</td>
+                <td>Objeto</td> 
+            </tr>
+        </tbody>
+    </table>
+</div>

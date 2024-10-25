@@ -1,0 +1,81 @@
+<app-menu></app-menu>
+<div class="container">
+    <h1>Formulário de Cadastro</h1>
+<form class="product-form" [formGroup]="formulario">
+    <label for="nome">Id:</label>
+    <input formControlName="id" type="text" id="nome" name="nome" required>
+
+    <label for="garantia">Nome:</label>
+    <input formControlName="nome" type="text" id="garantia" name="garantia" required>
+
+    <label for="garantia">Sobrenome:</label>
+    <input formControlName="sobrenome" type="text" id="garantia" name="garantia" required>
+
+    <label for="garantia">Login:</label>
+    <input formControlName="login" type="text" id="garantia" name="garantia" required>
+
+    <label for="descricao">Data de Nascimento:</label>
+    <input formControlName="dt_nascimento" type="date" id="descricao" name="descricao" required>
+
+    <label for="tipo">Email:</label>
+    <input formControlName="email" type="text" id="tipo" name="tipo" required>
+
+    <label for="tipo">Senha:</label>
+    <input formControlName="senha" type="text" id="tipo" name="tipo" required>
+
+    <label for="tipo">Telefone:</label>
+    <input formControlName="telefone" type="text" id="tipo" name="tipo" required>
+
+    <label for="tipo">Endereço:</label>
+    <input formControlName="endereco" type="text" id="tipo" name="tipo" required>
+    <label>Tipo</label>
+    <select formControlName="tipo">
+        <option>Selecione</option>
+        <option *ngFor="let tipo of arrTipos" [value]="tipo.id_tipo">{{tipo.descricao}}
+    </select>
+
+    <button type="submit"(click)="onSave()">Enviar</button>
+    <button type="submit"(click)="onCancelar()">Cancelar</button>
+
+    <p>{{mensagem}}</p>
+</form>
+
+<div class="report">
+    <h2>Relatório</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Ação</th>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Telefone</th>
+                <th>Email</th>
+                <th>Tipo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Exemplos de linhas na tabela -->
+            <tr>
+                <td><button>Excluir</button></td>
+                <td>1</td>
+                <td>João</td>
+                <td>Silva</td>
+                <td>(11) 12345-6789</td>
+                <td>joao.silva&#64;jojosilvaa.com</td>
+                <td>Usuário</td>
+            </tr>
+            <tr>
+                <td><button>Excluir</button></td>
+                <td>2</td>
+                <td>Maria</td>
+                <td>Oliveira</td>
+                <td>(21) 98765-4321</td>
+                <td>maria.oliveira&#64;mari.com</td>
+                <td>Admin</td>
+            </tr>
+            <!-- Adicione mais linhas conforme necessário -->
+        </tbody>
+    </table>
+</div>
+      

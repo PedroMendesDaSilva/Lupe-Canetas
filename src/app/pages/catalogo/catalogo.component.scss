@@ -91,3 +91,17 @@ body {
   background-color: #b1adad;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+ .btm{
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  position: absolute; /* Posiciona o botão de forma absoluta em relação ao contêiner pai */
+  top: 20px; /* Distância do topo */
+  font-family: Arial, Helvetica, sans-serif;
+  left: 20px; /* Distância do lado direito */
+ }
